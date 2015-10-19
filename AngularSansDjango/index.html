@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html ng-app="myHomepage">
+<head>
+	<title>PORKCHOP SANDWICHES</title>
+	<meta charset="utf-8">
+	<link rel="icon" type="image/png" href="/mainpage/assets/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/mainpage/assets/favicon-16x16.png" sizes="16x16">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="/mainpage/css/hellastyle.css">
+	<!-- Latest compiled and minified JavaScript -->
+</head>
+<body>
+<!--Here is where the navbar will go, so you can access the different components of the page. -->
+	<div id="topNav">
+	<nav class=" navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<ul class="nav nav-justified">
+				<li>
+					<a href="#/">Home</a>
+				<li>
+					<a href="#/resume">Resume</a>
+				</li>
+				<li>
+					<a href="#/projects">Projects</a>
+				</li>
+				<li>
+					<a href="#/blog">Blog</a>
+				</li>
+				<li>
+					<a target="_blank" href="https://github.com/LittleRizz">GitHub</a>
+				</li>
+				<li>
+					<a target="_blank" href="https://www.linkedin.com/pub/drew-ruselowski/73/36/5b">LinkedIn</a>
+				</li>
+				<li>
+					<a href="mailto:druselow@gmail.com">Electronic Mail</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	</div>
+
+
+<!-- Angular!! -->
+	<div ng-view>
+	</div>
+
+<!-- Scripts!! -->
+<footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<!-- Angular Scripts -->
+	<script src = '/mainpage/app.js'> </script>
+	<script src="/mainpage/js/mainPageApp.js"></script>
+
+
+	<div class="container">
+		<p id="copyright">&copy; 2015 Drewsoft Inc.</p>
+	</div>
+</footer>
+</body>
+</html>
