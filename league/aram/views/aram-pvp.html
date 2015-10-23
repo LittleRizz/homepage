@@ -1,0 +1,70 @@
+<!-- This is the NavBar - Includes links to pages as well as Summoner Search -->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header navbar-left">
+				<ul class="nav navbar-nav">
+					<li> <a href="#/">ARAM Predictor</a></li>
+					<li> <a href="#/profile">Profile</a></li>
+					<!-- <li> <a href="#">Contact</a></li> -->
+				</ul>
+			</div>
+<!-- This is the right-hand side - Search Bar and Go Buttons -->
+			<div class="container-fluid navbar-header navbar-right" style="margin-top: 5px;">
+				<ul class="nav navbar-nav">
+					<li> 
+						<input type="text" placeholder="Summoner Name" ng-model="AC.jellyBaby" class="form-control">
+					</li>
+					<li>
+						<button class="btn" ng-click="AC.predictARAM(AC.jellyBaby)">Go!</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+<!-- Banner and Such -->
+	<div>
+		<img id="banner" src = "aram/assets/lol-banner.png">
+	</div>
+<!-- This is the Versus Box -->
+	<div class="container">
+		<div class="row">
+			<center>
+			<div class="col-sm-12 col-md-5">
+			<div>
+				<h1 class="friendlyChamp">Team 1</h1>
+			</div>
+				<span ng-repeat="game in AC.lotsa">
+					<img class="champImage aramImage" ng-src="http://ddragon.leagueoflegends.com/cdn/5.10.1/img/champion/{{ game }}.png">
+				</span>
+				<div style="text-align: center">
+					<span>
+						<h2 class="friendlyChamp">{{ AC.SummonName }}
+					<span ng-repeat="name1 in AC.Flist">
+						<h2 class="friendlyChamp">{{ name1 }}</h2>
+					</span>
+				<h3 class="friendlyChamp">{{ AC.FScore }}</h3>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-2"><h2 style="color: white"> VS</h2></div>
+			<div class="col-sm-12 col-md-5">
+			<div>
+				<h1 class="enemyChamp">Team 2</h1>
+			</div>
+				<span ng-repeat="guy in AC.tonsa">
+					<img class="champImage aramImage" ng-src="http://ddragon.leagueoflegends.com/cdn/5.10.1/img/champion/{{ guy }}.png">
+				</span>
+				<div style="text-align: center;">
+					<span ng-repeat="name2 in AC.Elist">
+						<h2 class="enemyChamp">{{ name2 }}</h2>
+					</span>
+				<h3 class="enemyChamp">{{ AC.Escore }}</h3>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<h1 class="winner">{{ AC.winner }}</h1>
+			</div>
+		</div>
+	</div>

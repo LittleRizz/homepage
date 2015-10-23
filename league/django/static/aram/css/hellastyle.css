@@ -1,0 +1,82 @@
+.jumbotron {
+	background-color: #438492;
+}
+
+.dataBox {
+	border: 2px outset #E7CB08;
+	border-radius: 20px;
+	margin: 10px;
+}
+
+.champBox{
+	color: white;
+	border: 1px outset #E7CB08;
+	border-radius: 5px;
+	background-color: #292428;
+	padding: 2px;
+	margin: 2px;
+}
+
+.champImage{
+	width: 30%;
+	height: auto;
+}
+
+.champLink{
+	color: yellow;
+}
+
+.statHeading{
+	color: #C8C287;
+	text-align: center;
+}
+
+.tableColors{
+	color: red;
+}
+
+.aramImage{
+	border: 2px outset #E7CB08;
+	margin: 2px;
+}
+
+.friendlyChamp{
+	color: rgb(84, 165, 79);
+	font-family: Impact;
+}
+
+.enemyChamp{
+	color: rgb(208, 199, 110);
+	font-family: Impact;
+}
+
+.winner{
+	text-align: center;
+	color: rgb(180, 249, 246);
+}
+
+body {
+	background-color: #0E0E0E;
+	padding-top: 50px;
+}
+
+
+#porkchop {
+	color: white;
+}
+
+#banner {
+	width: 100%;
+	height: auto;
+}
+
+#main-profile {
+	padding: 10px;
+}
+
+a {
+	color: #FFDD1D;
+}
+a:hover{
+	color: #FFFF0B;
+}
