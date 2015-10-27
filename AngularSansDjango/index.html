@@ -15,7 +15,7 @@
 </head>
 <body>
 <!--Here is where the navbar will go, so you can access the different components of the page. -->
-	<div id="topNav">
+	<div ng-controller="navController" id="topNav">
 	<nav class=" navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
 			
@@ -33,7 +33,7 @@
 			 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav nav-justified">
 					<li>
-						<a href="#/">Home</a>
+						<a href="#/" tooltip-placement="bottom" uib-tooltip="To the main page, Robin!">Home</a>
 					</li>
 					<li>
 						<a href="#/resume">Resume</a>
@@ -42,14 +42,11 @@
 						<a href="#/projects">Projects</a>
 					</li>
 					<li>
-						<a href="https://github.com/LittleRizz">GitHub</a>
-					</li>
-					<li>
 						<a href="#/blog">Blog</a>
 					</li>
-	<!-- 				<li>
+					<li>
 						<a target="_blank" href="https://github.com/LittleRizz">GitHub</a>
-					</li> -->
+					</li>
 					<li>
 						<a target="_blank" href="https://www.linkedin.com/pub/drew-ruselowski/73/36/5b">LinkedIn</a>
 					</li>
@@ -75,8 +72,10 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 <!-- Angular Scripts -->
-	<script src = '/mainpage/app.js'> </script>
-	<script src="/mainpage/js/mainPageApp.js"></script>
+	<script src="mainpage/js/ui-bootstrap-custom-0.14.2.min.js"></script>
+	<script src = 'mainpage/app.js'> </script>
+	<script src="mainpage/js/mainPageApp.js"></script>
+	<script src="mainpage/js/navController.js"></script>
 
 
 	<div class="container">

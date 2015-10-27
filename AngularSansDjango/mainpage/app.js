@@ -1,5 +1,5 @@
 var app = angular.module("myHomepage", [
-	'ngRoute',
+	'ngRoute', 'ui.bootstrap',
 ]);
 
 app.config(['$routeProvider', function($routeProvider) {
