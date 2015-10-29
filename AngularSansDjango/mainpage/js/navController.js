@@ -1,3 +1,3 @@
-app.controller('navController', function($scope, $http){
+app.controller("NavController", function($scope, $http){
 	console.log("nav Controller online");
 });

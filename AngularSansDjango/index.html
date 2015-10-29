@@ -2,6 +2,17 @@
 <html ng-app="myHomepage">
 <head>
 	<title>PORKCHOP SANDWICHES</title>
+	<!-- Congrats!  You're looking at the source code!  
+		This clearly means that you want to look under the hood a little bit, instead of just
+		looking at the pretty features on my site.  Well played, sir or madam!
+
+		My site primarily utilizes AngularJS, since i'm learning more about it, and want to continue to 
+		add functionality as my skills develop.  Please feel free to offer me suggestions or improvements!
+
+		-Drew
+	-->
+
+
 	<meta charset="utf-8">
 	<link rel="icon" type="image/png" href="/mainpage/assets/favicon-32x32.png" sizes="32x32">
 	<link rel="icon" type="image/png" href="/mainpage/assets/favicon-16x16.png" sizes="16x16">
@@ -13,13 +24,15 @@
 	<link rel="stylesheet" href="/mainpage/css/hellastyle.css">
 	<!-- Latest compiled and minified JavaScript -->
 </head>
+
+
 <body>
 <!--Here is where the navbar will go, so you can access the different components of the page. -->
-	<div ng-controller="navController" id="topNav">
+	<div id="topNav">
 	<nav class=" navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
 			
-			<!-- Working on Collapsable Navbar -->
+<!-- Collapsable Navbar -->
 			 <div class="navbar-header">
 			      <button type="button" class="navbar-toggle collapsed" id="navButton" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 			        <span class="sr-only">Toggle navigation</span>
@@ -60,7 +73,7 @@
 	</div>
 
 
-<!-- Angular!! -->
+<!-- Angular Page Space!! -->
 	<div ng-view>
 	</div>
 
@@ -72,14 +85,16 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 <!-- Angular Scripts -->
+	<script src="mainpage/js/ui-bootstrap-custom-tpls-0.14.3.min.js"></script>
 	<script src = 'mainpage/app.js'> </script>
-	<script src="mainpage/js/ui-bootstrap-custom-tpls-0.14.2.min.js"></script>
 	<script src="mainpage/js/mainPageApp.js"></script>
 	<script src="mainpage/js/navController.js"></script>
+	<script src="mainpage/js/projectsController.js"></script>
 
 
 	<div class="container">
 		<p id="copyright">&copy; 2015 Drewsoft Inc.</p>
+		<p>Site created with <a href="http://getbootstrap.com/" target="_blank">bootstrap, </a>and with <a href="https://angularjs.org/" target="_blank">AngularJS.</a></p>
 	</div>
 </footer>
 </body>

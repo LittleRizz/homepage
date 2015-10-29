@@ -7,26 +7,26 @@ app.config(['$routeProvider', function($routeProvider) {
         .when('/', {
             templateUrl: '/mainpage/views/aboutme.html',
             title: 'Home',
-            controller: 'MainController',
-            controllerAs: 'MC'
+            // controller: 'MainController',
+            // controllerAs: 'MC'
         })
         .when('/resume', {
             templateUrl: '/mainpage/views/resume.html',
             title: 'Ruselowski Resume',
-            controller: 'ResumeController',
-            controllerAs: 'RC'
+            // controller: 'ResumeController',
+            // controllerAs: 'RC'
         })
         .when('/projects', {
             templateUrl: '/mainpage/views/projects.html',
             title: 'Past and Current Projects',
-            controller: 'ProjectsController',
-            controllerAs: 'PC'
+            // controller: 'ProjectsController',
+            // controllerAs: 'PC'
         })
         .when('/blog', {
             templateUrl: '/mainpage/views/blog.html',
             title: 'The Blog',
-            controller: 'BlogController',
-            controllerAs: 'BC'
+            // controller: 'BlogController',
+            // controllerAs: 'BC'
         })
         .otherwise({
             redirectTo: '/'
