@@ -1,0 +1,13 @@
+*.pyc
+.DS_Store
+phaser/js/phaser.min.js
+phaser/part1.html
+phaser/part2.html
+phaser/part3.html
+phaser/part4.html
+phaser/part5.html
+phaser/part6.html
+phaser/part7.html
+phaser/part8.html
+phaser/part9.html
+phaser/tutorial.html
